@@ -1,4 +1,5 @@
 #For checking Device status (Online or Offline)
+import conf
 
 from boltiot import Bolt
 mybolt = Bolt(conf.API_KEY, conf.DEVICE_ID)
