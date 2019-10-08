@@ -61,11 +61,11 @@ while True:
     
     # Step 3
     if temp >= threshold:
-        print("Sensor value has exceeded threshold")
+        print("Sensor value has exceeded threshold of ", conf.threshold)
         message = "Alert! temperature has exceeded " + str(conf.threshold) + \
-                  ". The temperature is " + str(temp)
+                  ". The temperature is " + str(temp) + "°C"
         telegram_status = send_telegram_message(message)
         print("This is the Telegram status:", telegram_status)
-
+    
     # Step 4
     time.sleep(10)
